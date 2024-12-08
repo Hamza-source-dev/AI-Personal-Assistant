@@ -59,11 +59,9 @@ def show_time():
 def greeting():
     hour = datetime.datetime.now().hour
     if hour >= 6 and hour < 12:
-        speak("Good Morning Sir!")
+        speak("Good Morning")
     elif hour >= 12 and hour < 18:
-        speak("Good Afternoon Sir!")
-    elif hour >= 18 and hour < 24:
-        speak("Good Afternoon sir!")
+        speak("Good Afternoon")
     else:
         speak("Good Night Sir!")
 
@@ -74,7 +72,7 @@ def wishme():
     greeting()
     date()
     show_time()
-    speak("How may I help you Sir!")
+    speak("How may I help you")
 # wishme()
 def takeCommandCMD():
     query = input("Please enter your input:")
